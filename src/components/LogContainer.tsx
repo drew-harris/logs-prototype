@@ -9,7 +9,7 @@ export default function LogContainer() {
       trpc: {
         ssr: true,
       },
-      refetchInterval: 500,
+      refetchInterval: 2000,
     }
   );
   const [parent] = useAutoAnimate<HTMLDivElement>({ duration: 120 });
