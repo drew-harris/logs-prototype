@@ -6,10 +6,7 @@ export default function LogContainer() {
   const { data } = api.logs.getLogs.useQuery(
     {},
     {
-      trpc: {
-        ssr: true,
-      },
-      refetchInterval: 2000,
+      refetchInterval: 500,
     }
   );
   const [parent] = useAutoAnimate<HTMLDivElement>({ duration: 120 });
